@@ -1,0 +1,37 @@
+name: ogre
+channels:
+- olitheolix
+- spyder-ide
+dependencies:
+- boost=1.60.0=py35_0
+- cmake=3.3.1=0
+- cython=0.24=py35_0
+- fontconfig=2.11.1=5
+- freeimage=3.17.0=1
+- freetype=2.5.5=0
+- glib=2.43.0=2
+- gst-plugins-base=1.4.5=0
+- gstreamer=1.4.5=0
+- icu=56.1=0
+- jpeg=8d=0
+- libffi=3.2.1=0
+- libpng=1.6.17=0
+- libxcb=1.11.1=0
+- libxml2=2.9.2=0
+- ogre=2.1=py35_1
+- openssl=1.0.2h=0
+- pip=8.1.1=py35_1
+- pkgconfig=1.1.0=py35_0
+- pyqt5=5.5.0=py35_0
+- python=3.5.1=0
+- qt5=5.5.0=0
+- readline=6.2=2
+- sdl=2.0.4=py35_1
+- setuptools=20.7.0=py35_0
+- sip=4.16.9=py35_0
+- sqlite=3.9.2=0
+- tk=8.5.18=0
+- wheel=0.29.0=py35_0
+- xz=5.0.5=1
+- zlib=1.2.8=0
+

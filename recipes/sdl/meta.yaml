@@ -1,0 +1,34 @@
+package:
+  name: sdl
+  version: "2.0.4"
+
+source:
+#  hg_url: /src/SDL
+  path: /src/SDL2-2.0.4
+
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - cmake
+    - pkgconfig
+    - boost
+    - freeimage
+    - freetype
+
+  run:
+    - python
+    - cmake
+    - pkgconfig
+    - boost
+    - freeimage
+    - freetype
+
+about:
+    home: https://www.libsdl.org/
+    summary: >
+      Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+    license: zlib

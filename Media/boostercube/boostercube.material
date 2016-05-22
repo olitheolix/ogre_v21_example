@@ -1,0 +1,13 @@
+hlms Cube.001 pbs
+{
+   roughness 0.5
+   diffuse 3.14 3.14 3.14
+   specular 0.1 0.1 0.1
+}
+
+hlms Thruster.001 pbs
+{
+   roughness 1.0
+   diffuse 8 0.8 0.8
+   specular 0 8 0.25
+}

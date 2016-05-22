@@ -1,0 +1,16 @@
+**/*~
+/Ogre.log
+/azOgre.cpp
+/azOgre.cpython-35m-x86_64-linux-gnu.so
+*.glsl
+/ogre_old.bak.bz2
+build/
+qt/Ogre.log
+/python/azOgre.cpp
+/python/azOgre.cpython-35m-x86_64-linux-gnu.so
+/python/Ogre.log
+/sdl/Ogre.log
+/sdl/ogre.cfg
+/python/src/azOgre.cpp
+/ogre.cfg
+/plugins_tools.cfg
