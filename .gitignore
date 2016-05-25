@@ -13,3 +13,4 @@ qt/Ogre.log
 /sdl/ogre.cfg
 /python/src/azOgre.cpp
 /ogre.cfg
+**/__pycache__/
