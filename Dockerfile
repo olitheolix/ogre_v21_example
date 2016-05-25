@@ -87,10 +87,11 @@ RUN $MINICONDA/bin/conda install -y -n ogre -c spyder-ide pyqt5
 # Add the Anaconda recipes for Ogre and SDL, then build them.
 ADD recipes/ /recipes/
 RUN cd /recipes && $MINICONDA/bin/conda build --python 3.5 sdl
-RUN cd /recipes && $MINICONDA/bin/conda build --python 3.5 ogre
+RUN cd /recipes && $MINICONDA/bin/conda build --python 3.5 ogre21
+RUN cd /recipes && $MINICONDA/bin/conda build --python 3.5 ogre110
 
 # Install the Ogre package into the Ogre environment.
-RUN $MINICONDA/bin/conda install -y -n ogre ogre sdl --use-local
+RUN $MINICONDA/bin/conda install -y -n ogre ogre=2.1 sdl --use-local
 
 # Copy the demo files.
 ADD ./ /demo/
