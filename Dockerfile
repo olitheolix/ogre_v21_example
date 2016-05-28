@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y \
     libzzip-dev \
     mercurial \
     pkg-config \
+    rapidjson-dev \
     wget \
     && apt-get clean
 
