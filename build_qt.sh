@@ -4,7 +4,7 @@ set -e
 # Directory with Qt demo.
 dirname=qt/build
 
-if [ "$CONDA_ENV_PATH" = "" ]; then
+if [ "$CONDA_PREFIX" = "" ]; then
 	echo "No Anaconda environment is active."
 	exit 1
 fi
