@@ -80,10 +80,8 @@ RUN echo "alias activate='source "$MINICONDA"/bin/activate'" >> /root/.bashrc \
 RUN $MINICONDA/bin/conda create -y -n ogre \
     python=3.5 \
     anaconda-client \
-    cython
-
-# Install PyQt5 from Spyder (Continuum does not yet provide it).
-RUN $MINICONDA/bin/conda install -y -n ogre -c spyder-ide pyqt5
+    cython \
+    pyqt
 
 # Add the Anaconda recipes for Ogre and SDL, then build them.
 ADD recipes/ /recipes/
