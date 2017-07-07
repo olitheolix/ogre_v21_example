@@ -7,15 +7,9 @@ Ogre. It shows an Ogre v2.1 scene and features several objects, lights, and
 dynamic shadows.
 
 The demo comes in three versions: SDL, Qt5, and Python (proof-of-concept only).
-
-Each demo is coded as a single class in a single file to make it easier to
-understand (I hope).
-
-The demos focus on the Ogre aspect only. As such they lack keyboard/mouse
-handling and use hard coded resource paths.
-
-The following screenshot shows all three demos running simultaneously on my
-laptop with an Nvidia GTX 750M graphics card.
+Each is coded as a single class, in a single file, with hard coded resource
+paths, and without any keyboard/mouse handling. This will hopefully make it
+easier to read and understand them.
 
 .. image:: screenshots/ogre3d.jpg
 
@@ -23,10 +17,10 @@ laptop with an Nvidia GTX 750M graphics card.
 Docker
 ======
 
-The Dockerfile details all the steps to build Ogre and the demos. It uses
-Anaconda to build them in virtual environments. This is not strictly necessary
-but the virtual environemtns it provides keeps the Ogre and SDL files isolated
-from other versions (possibly) installed on your system.
+The Dockerfile details all the steps to build Ogre and the demos in an
+Anaconda virtual environments. The virtual environment is not strictly
+necessary but makes it easy to keep the Ogre and SDL files out of systems
+directories.
 
 To build the container use
 
@@ -34,11 +28,12 @@ To build the container use
 
    docker build -t ogre:2.1 .
 
-This will clone and build Ogre v2.1 as an Anaconda package. Then it will
-compile the SDL, Qt5, and PyQt5 demos... this will take a while ;)
+This may take a while because it will first build Ogre v2.1 as an Anaconda
+package and then compile the SDL/Qt5/PyQt5 demos.
 
-Note: the sole purpose of the Dockerfile is to provide repeatable build
-instructions, not binaries for your host system (will probably not work).
+Note: the binaries from inside the Docker container are probably useless on
+the host system. The sole purpose with Docker here is to show the build
+instructions.
 
 
 Anaconda
@@ -46,14 +41,14 @@ Anaconda
 
 If you are on (K)Ubuntu 16.04 (64Bit) and have Continuum's Anaconda
 distribution installed then you should be able to use my pre-built Ogre
-package. If not then you need to build them yourself first as per the
-`Dockerfile` (see previous section).
+package. If not, you need to build them yourself as per the `Dockerfile`
+(see previous section).
 
 Before you start you will need a C++ compiler (`apt-get install
 build-essential` on Ubuntu).
 
 Use the following commands to create an Ogre environment, compile the
-demos, and run them:
+demos and run them:
 
 .. code-block:: bash
 
